@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* スタイルガイドに出力するHTMLを定義する為のファイル */
+/*
+
+
+## .navi--head
+
+#### 共通ヘッダナビゲーション
+
+```
+<div class="l-navi navi--head">
+</div>
+```
+
+
+## .navi--foot
+
+#### 共通フッターナビゲーション
+
+```
+<div class="l-navi navi--foot">
+</div>
+```
+
+
+## .h1-rep
+
+#### h1 見出し 発表会の様子
+
+```
+<h1 class="l-h h1-rep" title=""></h1>
+```
+
+
+## .link-home
+
+#### フッター トップもどるナビ
+
+```
+<div class="link-home">
+    <a href="../" title=""></a>
+</div>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

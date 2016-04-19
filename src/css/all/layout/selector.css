@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* セレクターlayout */
+body {
+  font-size: $FONT_SIZE_M;
+  line-height: $LINE_HEIGHT_M;
+  color: $CLR_TXT;
+  background-color: $CLR_BG;
+}
+a,
+a:link {
+  color: $CLR_TXT_LINK;
+}
+a:active,
+a:hover {
+  color: $CLR_TXT_HOVER;
+  text-decoration: underline;
+}

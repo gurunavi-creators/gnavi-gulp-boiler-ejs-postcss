@@ -1,0 +1,17 @@
+{
+  "title": "タイトル",
+  "site_title": "サイトタイトル",
+  "site_url": "サイトURL",
+  "copyright": "コピーライト",
+  "description": "ディスクリプション",
+  "keywords": "キーワード,キーワード,キーワード",
+  "location": "ロケーション",
+  "og_type": "website",
+  "og_img": "イメージ",
+  "og_title": "ogタイトル",
+  "og_locale": "ja_JP",
+  "fb_admins": "fb_admins",
+  "fb_app_id": "fb_app_id",
+  "twitter_type": "summary",
+  "canonical": "canonical"
+}

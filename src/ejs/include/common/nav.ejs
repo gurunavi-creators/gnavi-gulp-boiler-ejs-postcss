@@ -1,0 +1,6 @@
+    <nav>
+        <ul>
+<% for(var i=0; i < data.nav.category.length; i++) {%>            <li<%if (nav == data.nav.category[i].nav) { %> class="cur"<% } else { %><% } %>><a href="<%= data.nav.category[i].link %>"><%= data.nav.category[i].label %></a></li>
+<% } %>
+        </ul>
+    </nav>

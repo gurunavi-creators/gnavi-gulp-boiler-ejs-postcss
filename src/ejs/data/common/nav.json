@@ -1,0 +1,44 @@
+{
+  "category": [
+    {
+      "nav": "nav00",
+      "label": "トップ",
+      "link": "/"
+    },
+    {
+      "nav": "nav01",
+      "label": "category a",
+      "link": "/category_a/"
+    },
+    {
+      "nav": "nav02",
+      "label": "category b",
+      "link": "/category_b/"
+    },
+    {
+      "nav": "nav03",
+      "label": "category c",
+      "link": "/category_c/"
+    },
+    {
+      "nav": "nav04",
+      "label": "category d",
+      "link": "/category_d/"
+    },
+    {
+      "nav": "nav05",
+      "label": "category e",
+      "link": "/category_e/"
+    },
+    {
+      "nav": "nav06",
+      "label": "category f",
+      "link": "/category_f/"
+    },
+    {
+      "nav": "nav07",
+      "label": "category g",
+      "link": "/category_g/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+    <section>
+        <ul>
+<% for(var i=0; i < data.sample.list.length; i++) {%>            <li>
+                <a href="<%= data.sample.list[i].link %>">
+                    <img src="<%= data.sample.list[i].img %>" alt="">
+                    <span>
+                        <span><%= data.sample.list[i].label %></span>
+                        <span><%= data.sample.list[i].text %></span>
+                    </span>
+                </a>
+            </li>
+<% } %>
+        </ul>
+    </section>

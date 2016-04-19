@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* 変数を設定するファイル */
+
+/* border */
+$BORDER_RADIUS: 4px;
+$INNER_BORDER_RADIUS: 3px;
+
+/* width */
+$WIDTH_WRAPPER: 960px;
+$WIDTH_CONTENT: 880px;
+$WIDTH_ARTICLE: 690px;
+
+/* font-size */
+$FONT_SIZE_LLL: 22px;
+$FONT_SIZE_LL: 18px;
+$FONT_SIZE_L: 16px;
+$FONT_SIZE_M: 14px;
+$FONT_SIZE_S: 12px;
+$FONT_SIZE_SS: 11px;
+$FONT_SIZE_SSS: 8px;
+
+/* line-height */
+$LINE_HEIGHT_L: 2;
+$LINE_HEIGHT_M: 1.6;
+$LINE_HEIGHT_NONE: 1;
+
+/* background-color */
+/* 背景色：標準 */
+$CLR_BG: #fff;
+/* 背景色：反転 */
+$CLR_BG_REVERSE: #362020;
+/* 背景色：強調 */
+$CLR_BG_EM: #e2c147;
+
+/* color */
+/* 文字色：標準 */
+$CLR_TXT: #362020;
+/* 文字色：リンク */
+$CLR_TXT_LINK: #01588c;
+$CLR_TXT_HOVER: #01588c;
+/* 文字色：反転 */
+$CLR_TXT_REVERSE: #fff;
+/* 文字色：注記 */
+$CLR_TXT_NOTE: #666;

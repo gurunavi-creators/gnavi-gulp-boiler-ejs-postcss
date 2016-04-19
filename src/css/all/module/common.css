@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+ /*navi--head
+animation variable
+property */
+$ANIM_NVICON_PROP: transform;
+$ANIM_BD_PROP: opacity;
+/* duration */
+$ANIM_NVICON_DUR: .2s;
+$ANIM_BD_DUR: .4s;
+/* timing-function */
+$ANIM_NVICON_TIME: cubic-bezier(.3,.7,.5,1);
+$ANIM_BD_TIME: ease-in;
+
+
+/* footer */
+.footer {
+  margin: 0 0 135px;
+  padding-top: 40px;
+  border-top: 1px solid $CLR_BG_REVERSE;
+}
