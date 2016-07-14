@@ -286,7 +286,7 @@ gulp.task('build:css', function () {
 
 // build:js
 gulp.task('build:js', function () {
-  gulpSequence('concat', 'uglify', 'jshint')();
+  gulpSequence('test', 'concat', 'uglify')();
 });
 gulp.task('concat', function () {
   gulpSequence('concat:lib', 'concat:common')();
