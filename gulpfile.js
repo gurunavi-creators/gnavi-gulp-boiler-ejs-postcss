@@ -104,11 +104,13 @@ gulp.task('imageOptim', function() {
  */
 // precss(scss like)
 var precss = require('precss');
+var clearfix = require('postcss-clearfix');
 gulp.task('sass', function () {
   return gulp.src(path.css_src + '**/*.css')
     .pipe(plumber())
     .pipe(postcss([
-        precss()
+        precss(),
+        clearfix()
     ]))
     .pipe(gulp.dest(path.tmp + 'css/'));
  });
@@ -193,11 +195,10 @@ gulp.task('jshint', function () {
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });
+var eslint = require('gulp-eslint');
 gulp.task('eslint', function () {
   return gulp.src(path.js_src + 'all/*.js')
-    .pipe(plumber())
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
+    .pipe(eslint('eslint-config-gnavi'));
 });
 
 
