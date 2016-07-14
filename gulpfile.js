@@ -77,15 +77,11 @@ gulp.task('sprite', function () {
     imgPath: '../img/sprite-sample.png',
     cssFormat: 'css',
     padding: 5,
-    cssOpts: {
-    cssSelector: function (sprite) {
-      return '@define-extend icon--' + sprite.name;
-    }
-  }
   }));
   spriteData.img.pipe(gulp.dest(path.img_src));
-  spriteData.css.pipe(gulp.dest(path.css_src + 'all/module/'))
-    .pipe(size({title:'size : sprite'}));
+  spriteData.css
+  .pipe(gulp.dest(path.css_src + 'all/module/'))
+  .pipe(size({title:'size : sprite'}));
 });
 
 /*

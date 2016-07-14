@@ -22,13 +22,13 @@
 }
 .icon--c {
   display: flex;
-  @extend icon--c;
+  @include sprite($icon-c);
 }
 .icon--a {
   display: flex;
-  @extend icon--a;
+  @include sprite($icon-a);
 }
 .icon--b {
   display: flex;
-  @extend icon--b;
+  @include sprite($icon-b);
 }
