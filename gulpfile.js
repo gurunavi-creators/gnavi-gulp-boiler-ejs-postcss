@@ -132,7 +132,11 @@ gulp.task('renamecss', function () {
       browsers: ['last 2 version', 'ie >= 9'],
       cascade: false
      }),
-    cssnano()
+    cssnano({
+      minifyFontValues: {
+        removeQuotes: false
+      }
+    })
   ]))
   .pipe(gulp.dest(path.dist + 'css/'))
   .pipe(size({title:'size : css'}));
