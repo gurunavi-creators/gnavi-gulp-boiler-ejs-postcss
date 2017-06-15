@@ -1,10 +1,15 @@
 {
-  "name": "",
+  "name": "gnavi-gulp-boiler-ejs-postcss",
   "description": "gulp boilerplate for gnavi front-end development",
   "version": "1.0.4",
   "homepage": "",
   "main": "index",
   "scripts": {
+    "start": "gulp start",
+    "build": "gulp build",
+    "sprite": "gulp sprite",
+    "optim": "gulp optim",
+    "test": "gulp test",
     "stats": "./node_modules/stylestats/bin/cli.js dist/css/*.css -f csv > stats.csv"
   },
   "author": "",
@@ -22,16 +27,16 @@
     "cssnano": "^3.5.2",
     "del": "^1.2.1",
     "es6-promise": "3.1.2",
-    "eslint-config-gnavi": "0.0.9",
+    "eslint-config-gnavi": "^1.0.0-beta1",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.1",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.0",
     "gulp-concat-util": "^0.5.5",
     "gulp-ejs": "^2.1.1",
+    "gulp-eslint": "^3.0.1",
     "gulp-htmlmin": "^1.3.0",
     "gulp-imageoptim": "^1.0.3",
-    "gulp-jshint": "^2.0.0",
     "gulp-minify-ejs": "^1.0.3",
     "gulp-plumber": "^1.0.1",
     "gulp-postcss": "^6.1.0",
@@ -44,10 +49,12 @@
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.5",
     "gulp.spritesmith": "^6.2.0",
-    "jshint": "^2.8.0",
     "precss": "^1.4.0"
   },
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/gurunavi-creators/gnavi-gulp-boiler-ejs-postcss.git"
+  },
   "keywords": [],
   "bugs": {}
 }

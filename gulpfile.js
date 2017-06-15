@@ -1,5 +1,5 @@
 /**
- * gulp-boiler
+ * gnavi-gulp-boiler-ejs-postcss
  *
  * ** 開発開始手順
  *
@@ -19,7 +19,7 @@
  *
  * $ gulp optim
  *
- * ** jshintコマンド
+ * ** eslintコマンド
  *
  * $ gulp test
  *
@@ -189,19 +189,14 @@ gulp.task('uglify', function () {
     .pipe(size({title:'size : js'}));
 });
 
-// jshint
-var jshint = require('gulp-jshint');
-gulp.task('jshint', function () {
-  return gulp.src(path.js_src + 'all/*.js')
-    .pipe(plumber())
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
-});
+// eslint
+var eslint = require('gulp-eslint');
 gulp.task('eslint', function () {
   return gulp.src(path.js_src + 'all/*.js')
     .pipe(plumber())
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failOnError())
 });
 
 
@@ -257,7 +252,6 @@ gulp.task('copy', function () {
  */
 var browserSync = require('browser-sync');
 gulp.task('serve', function () {
-  gulpSequence('build')();
   browserSync({
     notify: false,
     server: {
@@ -293,7 +287,7 @@ gulp.task('build:css', function () {
 
 // build:js
 gulp.task('build:js', function () {
-  gulpSequence('concat', 'uglify', 'jshint')();
+  gulpSequence('concat', 'uglify', 'eslint')();
 });
 gulp.task('concat', function () {
   gulpSequence('concat:lib', 'concat:common')();
@@ -316,7 +310,7 @@ gulp.task('optim', function () {
 
 // test
 gulp.task('test', function () {
-  gulpSequence('jshint', 'eslint')();
+  gulpSequence('eslint')();
 });
 
 // build
