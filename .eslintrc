@@ -1,5 +1,5 @@
 {
-  "extends": ["eslint-config-gnavi/legacy"],
+  "extends": ["gnavi/legacy"],
   "env": {
     "browser": true,
     "node": false

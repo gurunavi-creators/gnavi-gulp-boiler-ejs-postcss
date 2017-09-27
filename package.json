@@ -27,7 +27,7 @@
     "cssnano": "^3.5.2",
     "del": "^1.2.1",
     "es6-promise": "3.1.2",
-    "eslint-config-gnavi": "^1.0.0-beta1",
+    "eslint-config-gnavi": "^1.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.1",
     "gulp-browserify": "^0.5.1",
